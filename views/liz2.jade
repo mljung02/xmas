@@ -9,9 +9,12 @@ block content
         div
           iframe(width="560" height="315" src="https://www.youtube.com/embed/wXF8MIG_HQI" frameborder="0" allowfullscreen)
         form(method="post" action="/liz2")
-          input(type='text' name='guess')
+          input(type='text' name='guess' autocomplete='off')
           if error
             div=error
-          button(type='submit') Submit
+            button.hintly#hint(type='button') GIVE ME A HINT
+            div.hide#showhint= hint
+          p
+            button.button.secondary(type='submit') Submit
       
     

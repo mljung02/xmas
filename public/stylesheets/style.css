@@ -41,3 +41,13 @@ li div {
   height: 300px;
   width: 100%;
 }
+
+.hinty {
+  font-weight: bolder;
+  color: red;
+}
+
+.hintly {
+  font-weight: bolder;
+  color: green;
+}

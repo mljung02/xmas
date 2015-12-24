@@ -32,7 +32,7 @@ router.post('/liz', function (req, res, next) {
   if (match('snowball', req.body.guess)) {
     res.redirect('/liz2')
   } else {
-    res.render('liz', {error: "Nope, try again!"})
+    res.render('liz', {error: "Nope, try again!", hint: 'Thems fighting words'})
   }
 })
 
@@ -40,7 +40,7 @@ router.post('/liz2', function (req, res, next) {
   if (match('pc computer desktop', req.body.guess)) {
     res.redirect('/lizwins')
   } else {
-    res.render('liz2', {error: "Nope, try again!"})
+    res.render('liz2', {error: "Nope, try again!", hint: 'Blank Bro'})
   }
 })
 
@@ -56,7 +56,7 @@ router.post('/jonas', function (req, res, next) {
   if (match('crispmas', req.body.guess)) {
     res.redirect('/jonaswins')
   } else {
-    res.render('jonas', {error: "Nope, try again!"})
+    res.render('jonas', {error: "Nope, try again!", hint: 'The texture of good cooked bacon.'})
   }
 })
 
@@ -72,7 +72,7 @@ router.post('/beth', function (req, res, next) {
   if (match('bleatings bleating', req.body.guess)) {
     res.redirect('/bethwins')
   } else {
-    res.render('beth', {error: "Nope, try again!"})
+    res.render('beth', {error: "Nope, try again!", hint: "Season's Greetings!"})
   }
 })
 
@@ -88,7 +88,7 @@ router.post('/mom', function (req, res, next) {
   if (match('sth', req.body.guess)) {
     res.redirect('/momwins')
   } else {
-    res.render('mom', {error: "Nope, try again!"})
+    res.render('mom', {error: "Nope, try again!", hint: 'Napkins'})
   }
 })
 
