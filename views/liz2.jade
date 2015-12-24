@@ -1,0 +1,17 @@
+extends layout
+
+block content
+    div.row
+      div.small-12.columns
+        div
+          h3 Congratulations, you have made it past level one.
+          div Please enter the password for level two.
+        div
+          iframe(width="560" height="315" src="https://www.youtube.com/embed/wXF8MIG_HQI" frameborder="0" allowfullscreen)
+        form(method="post" action="/liz2")
+          input(type='text' name='guess')
+          if error
+            div=error
+          button(type='submit') Submit
+      
+    

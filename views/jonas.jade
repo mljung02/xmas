@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div.row
+    div.small-12.columns
+      div What does bacon celebrate on December 25th??
+      form(method="post" action="/jonas")
+        input(type='text' name='guess')
+        if error
+          div=error
+        button(type='submit') Confirm

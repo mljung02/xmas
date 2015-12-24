@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div.row
+    div.small-12.columns
+      div What do sheep say to wish you happy holidays?
+      form(method="post" action="/beth")
+        input(type='text' name='guess')
+        if error
+          div=error
+        button(type='submit') Confirm

@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  div.row
+    div.small-12.columns
+      div What do you call a snowman party?
+      form(method="post" action="/liz")
+        input(type='text' name='guess')
+        if error
+          div=error
+        button(type='submit') Confirm
+      
+  
